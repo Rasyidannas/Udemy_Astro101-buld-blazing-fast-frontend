@@ -1,29 +1,22 @@
 ---
+import Main from "../layouts/Main.astro";
+
 const profilePicture = 'https://pbs.twimg.com/profile_images/1223457062035738624/hEjZnP2V_400x400.jpg';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<div class="profile">
-			<img alt="Rasyid annas's website" width="100px" height="100px" class="profile__picture" src={profilePicture} />
-			
-			<div class="profile__details">
-				<h1>Rasyid Annas</h1>
-				<h2>VP of Enginerring at Google</h2>
-				<p>
-					Helping developers be excellent and succed at building scalable products.
-				</p>
-			</div>
+<Main>
+	<div class="profile">
+		<img alt="Rasyid annas's website" width="100px" height="100px" class="profile__picture" src={profilePicture} />
+		
+		<div class="profile__details">
+			<h1>Rasyid Annas</h1>
+			<h2>VP of Enginerring at Google</h2>
+			<p>
+				Helping developers be excellent and succed at building scalable products.
+			</p>
 		</div>
-	</body>
-</html>
+	</div>
+</Main>
 
 <style>
 	.profile {
