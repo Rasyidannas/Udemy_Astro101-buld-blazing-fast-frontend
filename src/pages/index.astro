@@ -11,11 +11,10 @@ const profilePicture = 'https://pbs.twimg.com/profile_images/1223457062035738624
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Hello World!</h1>
-		<div>
-			<img alt="Rasyid annas's website" width="100px" height="100px" src={profilePicture} />
+		<div class="profile">
+			<img alt="Rasyid annas's website" width="100px" height="100px" class="profile__picture" src={profilePicture} />
 			
-			<div>
+			<div class="profile__details">
 				<h1>Rasyid Annas</h1>
 				<h2>VP of Enginerring at Google</h2>
 				<p>
@@ -25,3 +24,26 @@ const profilePicture = 'https://pbs.twimg.com/profile_images/1223457062035738624
 		</div>
 	</body>
 </html>
+
+<style>
+	.profile {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		padding: 1rem 0 3rem 0;
+	}
+
+	.profile__details {
+		flex: 1 0 300px;
+	}
+
+	.profile__details > h1 {
+		margin: 0;
+		color: red;
+	}
+
+	.profile__picture {
+		border-radius: 50%;
+		margin: 0 2rem 1rem 0;
+	}
+</style>
