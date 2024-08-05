@@ -1,4 +1,7 @@
 ---
+import Footer from "../components/Footer.astro";
+import NavigationBar from "../components/NavigationBar.astro"
+
 import "../styles/global.css";
 ---
 
@@ -15,8 +18,10 @@ import "../styles/global.css";
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">	
   </head>
 	<body>
-		<main>
-			<slot />
+    <main>
+      <NavigationBar />
+      <slot />
+      <Footer />
 		</main>
 	</body>
 </html>
