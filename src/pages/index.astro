@@ -2,6 +2,9 @@
 import Main from "../layouts/Main.astro";
 
 const profilePicture = 'https://pbs.twimg.com/profile_images/1223457062035738624/hEjZnP2V_400x400.jpg';
+
+//this will render in server (terminal)
+console.log("Hello world!")
 ---
 
 <Main>
@@ -39,3 +42,8 @@ const profilePicture = 'https://pbs.twimg.com/profile_images/1223457062035738624
 		margin: 0 2rem 1rem 0;
 	}
 </style>
+
+<script>
+//this will render in browser
+  console.log("Hello world!")
+</script>
