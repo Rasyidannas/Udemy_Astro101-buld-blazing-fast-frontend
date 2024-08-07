@@ -48,6 +48,8 @@
 </style>
 
 <script>
+  // import {titleCase} from "title-case"; // you can import 3rd part library
+
   const DARK_THEME_CLASS = "dark";
   const COLOUR_MODE = "COLOUR_MODE";
   const LIGHT_THEME = "LIGHT";
@@ -70,7 +72,7 @@
     return LIGHT_THEME;
   }
 
-  const initialColourMode = getInitialColourMode()
+  const initialColourMode = getInitialColourMode();
 
   const setInitialColorMode = (mode: string) => {
     if(mode === LIGHT_THEME) {
