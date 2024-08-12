@@ -56,33 +56,7 @@
   const DARK_THEME = "DARK";
 
   const toggle = document.querySelector("button")
-  const rootEl = document.documentElement;
-
-  const getInitialColourMode = () => {
-    const previouslySavedColorMode = window.localStorage.getItem(COLOUR_MODE);
-
-    if(previouslySavedColorMode) {
-      return previouslySavedColorMode;
-    }
-
-    if(window.matchMedia("(prefer-color-schema: dark").matches) {
-      return DARK_THEME;
-    }
-
-    return LIGHT_THEME;
-  }
-
-  const initialColourMode = getInitialColourMode();
-
-  const setInitialColorMode = (mode: string) => {
-    if(mode === LIGHT_THEME) {
-      rootEl.classList.remove(DARK_THEME_CLASS);
-    } else {
-      rootEl.classList.add(DARK_THEME_CLASS);
-    }
-  }
-
-  setInitialColorMode(initialColourMode)
+  const rootEl = document.documentElement;  
 
   if(toggle) {
     toggle.addEventListener("click", () => {
