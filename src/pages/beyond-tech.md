@@ -1,0 +1,3 @@
+- UI/UX designer
+- Listening music
+- Palying games
