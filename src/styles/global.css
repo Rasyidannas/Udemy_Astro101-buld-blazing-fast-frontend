@@ -39,3 +39,13 @@ main {
   margin: auto;
 }
 
+p,
+li {
+  font-size: 1rem;
+  color: var(--grey-400);
+  opacity: 0.8;
+}
+
+li {
+  margin: 1rem 0;
+}
