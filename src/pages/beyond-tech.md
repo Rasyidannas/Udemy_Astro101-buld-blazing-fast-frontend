@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/Main.astro
+layout: ../layouts/Blog.astro
 ---
 
 - UI/UX designer
