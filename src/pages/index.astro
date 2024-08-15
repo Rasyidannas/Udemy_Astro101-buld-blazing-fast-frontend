@@ -1,5 +1,6 @@
 ---
 import Main from "../layouts/Main.astro";
+import Cards from "../components/Cards.astro";
 
 const profilePicture = 'https://pbs.twimg.com/profile_images/1223457062035738624/hEjZnP2V_400x400.jpg';
 
@@ -18,7 +19,28 @@ console.log("Hello world!")
 				Helping developers be excellent and succed at building scalable products.
 			</p>
 		</div>
-	</div>
+  </div>
+
+  <Cards cards={[
+    {
+      title: "Here are my guiding philoshopies for life",
+      gradientFrom: "#818cf8",
+      gradientTo: "#d8b4fe",
+      to: "/philosophies"
+    },
+    {
+      title: "A summary of my work history",
+      gradientFrom: "#fde68a",
+      gradientTo: "#fca5a5",
+      to: "/work-summary"
+    },
+    {
+      title: "What I do beyond technology",
+      gradientFrom: "#6ee7b7",
+      gradientTo: "#9333ea",
+      to: "/beyond-tech"
+    }
+  ]} />
 </Main>
 
 <style>
