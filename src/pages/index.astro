@@ -6,6 +6,9 @@ const profilePicture = 'https://pbs.twimg.com/profile_images/1223457062035738624
 
 //this will render in server (terminal)
 console.log("Hello world!")
+
+// this will get all files in pages/blogs folder
+const blogs = await Astro.glob<{title: string; poster: string; subtitle: string;}>("../pages/blogs/*.md")
 ---
 
 <Main title="Rasyid Annas">
@@ -48,17 +51,13 @@ console.log("Hello world!")
   </div>
 
   <ol class="blogs">
-    <li class="blogs__list">
-      <a class="blog__link" href="blogs/typescript-is-the-new-javascript">Typescript is a new Javascript</a>
+    {
+    blogs.map((blog) => (
+      <li class="blogs__list">
+      <a class="blog__link" href={blog.url}>{blog.frontmatter.title}</a>
     </li>
-    
-    <li class="blogs__list">
-      <a class="blog__link" href="blogs/rust-javascript-tooling"> Why Rust is the future of Javascript tooling</a>
-    </li>
-
-    <li class="blogs__list">
-      <a class="blog__link" href="blogs/sleep-more">Why you should sleep more</a>
-    </li>
+      ))
+    }
   </ol>
 </Main>
 
