@@ -1,9 +1,11 @@
 <script>
+import { useStore } from "@nanostores/vue";
+import { upvoteCountStore } from "../stores/upvotes.ts";
+
 export default {
-  data() {
-    // data properties used in the UI template
+  setup(props) {
     return {
-      upvoteCount: 0,
+      upvoteCount: useStore(upvoteCountStore),
       maxUpvoteCount: 50,
     };
   },
@@ -11,7 +13,7 @@ export default {
     // method called when you click the upvote button
     upvote() {
       if (this.upvoteCount < this.maxUpvoteCount) {
-        this.upvoteCount++;
+        upvoteCountStore.set(this.upvoteCount + 1);
       }
     },
   },
