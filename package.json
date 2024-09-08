@@ -1,18 +1,21 @@
 {
-  "name": "lonely-light",
+  "name": "astro-islands-intro",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.8.3",
-    "astro": "^4.12.2",
-    "title-case": "^4.3.1",
-    "typescript": "^5.5.4"
+    "@astrojs/tailwind": "^3.0.1",
+    "astro": "^2.0.17",
+    "tailwindcss": "^3.2.7"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.4"
   }
 }
