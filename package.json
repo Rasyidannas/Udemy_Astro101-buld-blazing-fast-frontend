@@ -11,16 +11,19 @@
   },
   "dependencies": {
     "@astrojs/react": "^3.6.2",
-    "@astrojs/tailwind": "^3.0.1",
+    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vue": "^4.5.0",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
-    "astro": "^2.0.17",
+    "astro": "^4.15.4",
     "react": "^19.0.0-beta",
     "react-dom": "^19.0.0-beta",
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.2.7",
+    "vue": "^3.5.3"
   },
   "devDependencies": {
     "prettier": "^2.8.4",
-    "prettier-plugin-tailwindcss": "^0.2.4"
+    "prettier-plugin-tailwindcss": "^0.2.4",
+    "typescript": "^5.5.4"
   }
 }
