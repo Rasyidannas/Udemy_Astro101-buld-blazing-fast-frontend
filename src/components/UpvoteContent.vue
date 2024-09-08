@@ -22,7 +22,7 @@ export default {
 
 <template>
   <div>
-    <slot />
+    <slot name="description" />
   </div>
   <div class="m-2 flex items-center rounded-md border border-slate-600 p-2">
     <button
@@ -63,4 +63,5 @@ export default {
       </div>
     </div>
   </div>
+  <slot name="awesome" />
 </template>
