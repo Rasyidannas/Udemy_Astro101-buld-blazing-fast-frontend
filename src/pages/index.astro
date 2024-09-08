@@ -1,8 +1,8 @@
 ---
-import DefaultIslandLayout from "../layouts/DefaultIslandLayout.astro";
+import LargeMainContentLayout from "../layouts/LargeMainContentLayout.astro";
 import { UpvoteContent } from "../components/UpvoteContent";
 ---
 
-<DefaultIslandLayout>
-  <UpvoteContent client:idle />
-</DefaultIslandLayout>
+<LargeMainContentLayout>
+  <UpvoteContent client:visible />
+</LargeMainContentLayout>
